@@ -10,4 +10,3 @@ function randomint(low, high) {
 function gay(){
 containerE1.innerHTML = "<div>" + Names[randomint(0, 3)] + "</div>";
 }
-//
