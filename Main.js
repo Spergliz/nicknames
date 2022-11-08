@@ -20,6 +20,7 @@ function wORK() {
 }
 
 function wORK2 (){
+  let divstr = `"`
   for(let i = 0; i< Names.length; i++){
   
   }
