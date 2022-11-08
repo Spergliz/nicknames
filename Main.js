@@ -5,7 +5,7 @@ let inputE2 = document.getElementById("input2");
 document.getElementById("button").addEventListener("click", wORK);
 document.getElementById("button2").addEventListener("click", wORK2)
 
-let Names = ["ubuntu user", "linux user", "Arch user","Mint user"];
+let Names = ["Ubuntu user", "Fedora user", "Arch user","Mint user"];
 
 function randomint(low, high) {
   return Math.floor(Math.random() * (high - low) + low);
@@ -20,8 +20,11 @@ function wORK() {
 }
 
 function wORK2 (){
-  let divstr = `"`
+  let firstname = inputE1.value
+  let lastname = inputE2.value
+  let divstr = ``
   for(let i = 0; i< Names.length; i++){
-  
+     divstr += `<div> ${firstname} "${Names[i]}" ${lastname}`
   }
+  containerE2.innerHTML =divstr 
 }
